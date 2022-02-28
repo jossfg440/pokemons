@@ -1,13 +1,119 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container {
+}
+.header {
+}
+.sidebar {
+}
+.footer {
+position: relative;
+top: 35px;
+}
+.background-image {
+background: transparent url(images/magnifying-glass-solid.svg) no-repeat scroll 7px 50%;
+padding-left: 30px;
+}
+.inputSearch {
+background: transparent url(images/magnifying-glass-solid.svg) no-repeat scroll 7px 4px;
+width: 139px;
+height: 29px;
+padding-left: 33px;
+}
+.btnNuevo {
+position: relative;
+top: -3px;
+background: #6633ff none repeat scroll 0% 50%;
+width: 139px;
+color: white;
+right: -482px;
+height: 29px;
+}
+.btnNuevo img {
+padding: 5px;
+background: #6633ff none repeat scroll 0% 50%;
+vertical-align: middle;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btnGuardar {
+background: #6633ff none repeat scroll 0% 50%;
+width: 139px;
+color: white;
+height: 29px;
+}
+.btnGuardar:disabled,
+button[disabled]{
+border: 1px solid #999999;
+background-color: #cccccc;
+color: #666666;
+}
+.btnGuardar img {
+padding: 5px;
+vertical-align: middle;
+}
+
+
+.btnCancelar {
+background: #6633ff none repeat scroll 0% 50%;
+width: 139px;
+color: white;
+height: 29px;
+}
+.btnCancelar img {
+padding: 5px;
+background: #6633ff none repeat scroll 0% 50%;
+vertical-align: middle;
+}
+
+
+.content {
+top: 16px;
+position: relative;
+left: 0px;
+}
+.tabla {
+border: 1px solid black;
+table-layout: fixed;
+width: 800px;
+}
+.th {
+border: 1px solid black;
+text-align: center;
+}
+.td {
+border: 1px solid black;
+}
+.tr {
+border: 1px solid black;
+}
+table, th, td {
+border: 1px solid ;
+border-collapse: collapse;
+}
+.tablaNombre {
+text-align: left;
+}
+.tablaImagen {
+text-align: center;
+}
+.tablaAtaque {
+text-align: left;
+}
+.tablaDefensa {
+text-align: left;
+}
+.tablaAcciones {
+text-align: center;
+}
+.tablaNuevoPokemon {
+border: 1px solid black;
+table-layout: fixed;
+width: 800px;
+}
+.tablaNuevoPokemon td {
+border: none;
+padding: 10px;
+}
+.slidecontainer {
+width: 100%; /* Width of the outside container */
+display: flex;
+align-items: center;
 }

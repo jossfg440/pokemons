@@ -7,11 +7,11 @@ const NuevoPokemonForm = (props) => {
   
     return (
 	 <form onSubmit={props.onSubmit}>
-         <div class="footer">
+         <div className="footer">
 	  <table className="tablaNuevoPokemon">
 	    <tbody>
 	    <tr>
-	    <td colspan="5" align="center">Nuevo Pokemon </td>
+	    <td colSpan="5" align="center">Nuevo Pokemon </td>
 	    </tr>
 	    </tbody><tbody>
 	    <tr>
@@ -22,7 +22,7 @@ const NuevoPokemonForm = (props) => {
 	    </td>
 	    <td align="right">Ataque:</td>
 	    <td>
-	    <div class="slidecontainer"> 0<Slider defaultValue={props.nuevoAtaque===''?50:props.nuevoAtaque} step={10}  onChange={props.onChangeAtaque}></Slider>100</div>
+	    <div className="slidecontainer"> 0<Slider defaultValue={props.nuevoAtaque===''?50:props.nuevoAtaque} step={10}  onChange={props.onChangeAtaque}></Slider>100</div>
 	    </td>
 	    </tr>
 	    <tr>
@@ -32,7 +32,7 @@ const NuevoPokemonForm = (props) => {
 	    </td>
 	    <td align="right">Defensa:</td>
 	    <td>
-	    <div class="slidecontainer"> 0<Slider defaultValue={props.nuevoDefensa===''?50:props.nuevoDefensa} step={10} onChange={props.onChangeDefensa}></Slider>100</div>
+	    <div className="slidecontainer"> 0<Slider defaultValue={props.nuevoDefensa===''?50:props.nuevoDefensa} step={10} onChange={props.onChangeDefensa}></Slider>100</div>
 	    </td>
 	    </tr>
 	    <tr>
@@ -50,8 +50,8 @@ const NuevoPokemonForm = (props) => {
 	    <tr>
 	    <td><br/>
 	    </td>
-	    <td colspan="2" align="right"><button type="submit" className="btnGuardar" disabled={!props.nuevoAtaque}> <img src={iconoGuardar} background="#" height="14" width="10"   /><span>Guardar</span> </button></td>
-	    <td colspan="2"><button  className="btnCancelar">
+	    <td colSpan="2" align="right"><button type="submit" className="btnGuardar" disabled={!props.nuevoAtaque}> <img src={iconoGuardar} background="#" height="14" width="10"   /><span>Guardar</span> </button></td>
+	    <td colSpan="2"><button  className="btnCancelar">
 	    <img src={iconoCancelar} background="#" height="14" width="10" /><span>Cancelar</span> </button></td>
 	    <td><br/>
 	    </td>

@@ -157,7 +157,7 @@ const  App = () => {
 	
   }	
   return (
-	  <div class="container">
+	  <div className="container">
 	 
           <BuscarPokemons patronBusqueda ={nuevaBusqueda} onChange={handleCambiosBusqueda} onClickNuevo ={handleLimpiarForma} />
 	  <ListarPokemons listaPokemonsMostrar ={listaPokemonsMostrar} eliminarPokemon={eliminarPokemon} editarPokemon={editarPokemon} />

@@ -37,13 +37,14 @@ test('click en el boton eliminar una vez', async () => {
 
   const mockHandler = jest.fn()
 
-  render(
+    render(
 	
 	 <ListarPokemons listaPokemonsMostrar={pokemon} eliminarPokemon={mockHandler} /> 
   )
 
-  const button = screen.getByText('Eliminar')
-  userEvent.click(button)
-
+    const button = screen.queryAllByRole('button')
+   
+    userEvent.click(button[1])
+     
   expect(mockHandler.mock.calls).toHaveLength(1)
 })

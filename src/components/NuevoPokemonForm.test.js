@@ -7,14 +7,13 @@ import userEvent from '@testing-library/user-event'
 test('Probar forma de ingreso <NuevoPokemonForm /> ', () => {
   const nuevoPokemon = jest.fn()
   
-  render(<NuevoPokemonForm onSubmit={nuevoPokemon} />)
+  const { container } =  render(<NuevoPokemonForm   onChangeNombre={nuevoPokemon} />)
 
+  const botonGuardar = container.querySelector('.btnGuardar')
   const input = screen.getByAltText('Nombre')  
-  const botonGuardar = screen.getByText('GUARDAR')
-   
+    
   userEvent.type(input, 'Pikachu' )
   userEvent.click(botonGuardar)
-    
-  expect(nuevoPokemon.mock.calls).toHaveLength(1)
+  expect(input.value).toBe('Pikachu')
   
 })

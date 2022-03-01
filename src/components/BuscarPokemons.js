@@ -3,7 +3,7 @@ import iconoMas from '../images/plus-solid.svg'
 
 const BuscarPokemons = (props) => {
     return (
-	<div class="header">
+	<div className="header">
 	     <p> Listado de Pokemon </p>
 	    <input className="inputSearch" placeholder="Buscar" value ={props.patronBusqueda}  onChange={props.onChange} />
 	    <button  className="btnNuevo" onClick={props.onClickNuevo}>

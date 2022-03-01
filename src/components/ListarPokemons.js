@@ -12,7 +12,7 @@ const Button = (props) => (
 const ListarPokemons = (props) => {
   
     return (
-	<div class="content">
+	<div className="content">
 	<table className="tabla">
   <tbody>
     <tr>
